@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>회원 가입 양식</h1>
+        <hr>
+        <form> <!-- 입력하는 폼 -->
+            <label>아이디 : <input type="text" id="memberId" name="memberId" size="15"></label> <!-- 타입의 기본은 text / 길이를 조정하려면 size -->
+            <br>
+            <label>비밀번호 : <input type="password" id="memberPw" name="memberPw" size="15"></label> <!-- label 을 씀으로써 (비밀번호 : input type="text") 하나로 묶음 / password이면 안 보임 -->
+            <br>
+            <label>이름 : <input type="text" id="memberName" name="memberName" size="15"></label>
+            <br>
+            <label>
+                전화번호 : <input type="text" id="phone1" name="phone1" size="7"> <!-- id = 디자이너가 디자인 하기 위한 이름 / name = 서버에 식별시켜 넘기기 위한 이름 -->
+                - <input type="text" id="phone2" name="phone2" size="7">
+                - <input type="text" id="phone3" name="phone3" size="7">
+            </label>
+            <br>
+            회사전화 : <input type="tel" id="officePhone" name="officePhone">
+            <br>
+            이메일 : <input type="email" id="email" name="email">
+            <br>
+            성별 : <input type="radio" name="gender" value="male" checked>남 <input type="radio" name="gender" value="female">여 <!-- radio를 쓰게 되면 반드시 반드시 name을 써줘야함 -->
+            <br> <!-- 그리고 값을 입력해서 전송 하는게 아니기 때문에 value를 지정해줘서 넘겨줘야 한다. / checked 하면 미리 체크 됨 -->
+            취미 : <input type="checkbox" name="hobby" value="sports">스포츠
+                    <input type="checkbox" name="hobby" value="movie">영화
+                    <input type="checkbox" name="hobby" value="book">독서
+                    <input type="checkbox" name="hobby" value="game">게임
+                    <br>
+            보유 스마트폰 갯수 : <input type="number" min="0" max="3" value="1" name="havephone"> <!-- 여기서 value는 디폴트 값 -->
+            <br>
+            나이 : <input type="range" min="1" max="100" step="1" value="20" name="memberAge"> <!-- step은 숫자만큼 수치를 변동시키겠다-->
+            <br>
+            생일 : <input type="date" name="birth">
+            <br>
+            태어난 시간 : <input type="time" name="birthtime">
+            <br>
+            예약 : <input type="date" min="2025-07-20" max="2025-12-31">
+            <br>
+            사진첨부 : <input type="file" name="file">
+            <br>
+            <input type="submit" value="회원가입"> <!-- submit=제출 버튼 / value = 제출 글자를 회원가입으로 변경 -->
+            <input type="reset" value="초기화">
+            <input type="button" value="가입취소" onclick="window.open('image1.html', '_blank', 'width=300, height=400')">
+            <br>
+            <input type="image" src="images/login.png">
+        </form>
+    </body>
+</html>

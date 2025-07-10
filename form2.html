@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- ! 엔터 하면 폼 만들어줌 -->
+<html lang="en"> <!-- 언어는 영어 -->
+<head>
+    <meta charset="UTF-8"> <!-- 한글이 들어오면 UTF-8로 변환해서 사용해라. (아스키 코드) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 디자인에 관한 거라 그냥 놔두셈 -->
+    <title>input form 연습</title>
+</head>
+<body>
+    <form>
+        회원 이름 : <input type="hidden" name="memberName" value="손님"><br> <!-- hidden 화면에서는 안보이지만 서버로는 보내진다. -->
+        아이디 :  <input type="text" name="memberId" placeholder="guest"><br> <!-- placeholder 미리 sample 값을 넣어놓는것 -->
+        비밀번호 : <input type="password" name="memberPw" autofocus><br> <!-- autofocus 특정 폼에 미리 자동으로 커서가 들어가 있는것 -->
+        메모장 : <textarea rows="15" cols="30"></textarea><br>
+        이메일 <input type="text" name="email1"> @ 
+        <select name="email2">
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="gamil.com" selected>gmail.com</option> <!-- selected 로 미리 골라 놓을수 있음 -->
+        </select><br>
+        거주지 : <input type="text" value="서울" readonly><br> <!-- readonly 수정이 불가능 함 -->
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

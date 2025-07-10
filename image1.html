@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <figure> <!-- <figure>로 이미지와 이미지를 설명하는 <figcaption>을 묶을수 있다. -->
+        <img src="images/orange.jpg" width="350" height="">       <!-- html 만들고 있는 폴더와 같은 공간에 있다면 폴더를 불러오고 이미지를 불러오면 되지만 -->
+        <!-- 가로나 세로의 크기를 조정할수도 있음 / 가로든 세로든 하나만 크기를 조정하면 나머지 하나는 비율에 맞춰서 알아서 조정 된다. / 하나만 줄이자. -->
+         <figcaption>레드향 1개 1000원</figcaption> <!-- 이미지 설명 -->
+         </figure>
+        <br>       
+        <img src="../img/img.jpeg">         <!-- 다른 공간에 있다면 ../로 현재 폴더에서 나가서 다른 폴더에 접속후 이미지를 불러와야 한다 -->
+        <hr>
+        한줄 띄워주는 태그는 &lt;br&gt; 입니다 <!-- <>를 표현해주고 싶다면 &lt; &gt; 을 쓰면 된다.-->
+        <br>
+        안녕!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;감사!! <!-- 여러번 띄워서 글씨를 쓰고 싶다면 &nbsp; 를 사용 -->
+        <br>
+        &copy;copyright 2000~2025 <!-- ⓒ 특수문자 코드 -->
+        <hr>
+        <object data="product.pdf" width="900" height="800"></object> <!-- object 불러 올때는 data / 얘는 사진과 다르게 가로 세로 둘 다 지정해줘야함 -->
+        <object data="images/orange.jpg"></object>  <!-- 그렇다고 해서 이미지를 못 불러오는건 아님 / 만능처럼 보이지만 단점이 하나 있음 / 웹브라우저 호환성이 떨어짐 -->
+        <hr>
+        <embed src="media/spring.mp3">
+        <br>
+        <embed src="media/flight.mp4" width="500" height="400">
+        <hr>
+        <audio src="media/spring.mp3" controls autoplay loop></audio> <!-- 자동으로 무한 재생 -->
+        <video src="media/flight.mp4" controls autoplay loop poster="images/orange.jpg"></video> <!-- poster는 썸네일 -->
+    </body>
+</html>
